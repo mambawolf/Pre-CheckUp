@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pre-CheckUp</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href="style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="nav">
+                <img src="Images/logo.png" alt="logo" width="3.5%">
+                <h1>Pre-CheckUp</h1>
+            </div>
+        </header>
+        <section class="about">
+            <div class="aboutdiv">
+                <h1>What is Pre-CheckUp</h1>
+                <p>As the name is self-explainatory, Pre-CheckUp is a web application that is used by doctors and medical practioners
+                for entering and storing patients information which he answers during the preliminary medical examination queries.
+                This application is thus an alternative to the traditional priscript based medical records and replaces it to store and also 
+                manage data records for future reference. A must use application for doctors.</p>
+                <div class="buttonclass">
+                    <button class="buttonn">Know More</button>
+                </div>
+            </div>
+            <div class="aboutimg">
+                <img src="Images/abimg.jpg" alt="doctor" width="100%">
+            </div>
+        </section>
+        <section class="free arena">
+            <div class="freee">
+                <h1></h1>
+            </div>
+        </section>
+        <section class="workplace">
+            <div class="workhead">
+                <h1>Patient Preliminary Examination Record</h1>
+            </div>
+            <div class="addd">
+                <h1>Add Information</h1>
+            </div>
+            <div class="workarea">
+                <table>
+                    <tr>
+                        <td>
+                            <form class="formclass" onsubmit="event.preventDefault(); onformsubmit();" autocomplete="off">
+                                <div>
+                                    <label>Date</label>
+                                    <input type="date" name="date" id="date">
+                                </div>
+                                <div>
+                                    <label>Patient Name</label>
+                                    <input type="text" name="patientname" id="patientname">
+                                </div>
+                                <div>
+                                    <label>Gender</label>
+                                    <input type="text" name="gender" id="gender">
+                                </div>
+                                <div>
+                                    <label>Age</label>
+                                    <input type="number" name="age" id="age">
+                                </div>
+                                <div>
+                                    <label>Problem</label>
+                                    <input type="text" name="problem" id="problem">
+                                </div>
+                                <div>
+                                    <label>Remarks</label>
+                                    <input type="text" name="remarks" id="remarks">
+                                </div>
+                                <div>
+                                    <label>Medication Prescribed</label>
+                                    <input type="text" name="medico" id="medico">
+                                </div>
+                                <div class="formsubmit">
+                                    <input type="submit" value="submit">
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </table>    
+                <h1 style="margin: 1%;">Patient Record</h1>
+                <table style="margin: 1%;" class="list" id="tableid">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Problem</th>
+                            <th>Remarks</th>
+                            <th>Medication</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>
